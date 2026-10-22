@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四地区外汇与虚拟货币 · 行业新闻选题库 20261022</title>
+<style>
+/* ============ WikiFX 风格设计令牌 ============ */
+:root{
+  --brand:#1668ff;          /* 主品牌蓝 */
+  --brand-d:#0a4bc4;        /* 深蓝 */
+  --brand-l:#eaf1ff;        /* 浅蓝底 */
+  --ink:#141c26;            /* 主文字 */
+  --ink-2:#4a5563;          /* 次文字 */
+  --ink-3:#7d8794;          /* 弱文字 */
+  --bg:#f4f6f9;             /* 页面底 */
+  --card:#ffffff;
+  --line:#e3e8ef;
+  --line-2:#eef1f6;
+  --red:#e0343c;
+  --red-bg:#fdecec;
+  --green:#12a05c;
+  --green-bg:#e8f7f0;
+  --orange:#ea7317;
+  --orange-bg:#fdf0e4;
+  --gold:#c98a00;
+  --gold-bg:#fdf6e3;
+  --purple:#7b4ddb;
+  --purple-bg:#f2edfd;
+  --shadow:0 1px 2px rgba(16,32,64,.05), 0 4px 14px rgba(16,32,64,.06);
+  --shadow-h:0 4px 10px rgba(16,32,64,.08), 0 14px 34px rgba(16,32,64,.12);
+  --r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Segoe UI",Roboto,sans-serif;
+  line-height:1.72;font-size:14.5px;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ============ 顶部品牌条 ============ */
+.topbar{
+  background:linear-gradient(100deg,#0a2f6b 0%,#1668ff 58%,#2b8bff 100%);
+  color:#fff;padding:26px 0 22px;position:relative;overflow:hidden;
+}
+.topbar::after{
+  content:'';position:absolute;right:-70px;top:-70px;width:280px;height:280px;
+  background:radial-gradient(circle,rgba(255,255,255,.16),transparent 68%);border-radius:50%;
+}
+.topbar .wrap{max-width:1320px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.brandline{display:flex;align-items:center;gap:11px;font-size:12.5px;letter-spacing:.14em;opacity:.9;font-weight:600}
+.brandline .dot{width:7px;height:7px;border-radius:50%;background:#5ef0b0;box-shadow:0 0 0 4px rgba(94,240,176,.22)}
+.topbar h1{font-size:27px;font-weight:800;letter-spacing:-.4px;margin:9px 0 8px;line-height:1.35}
+.topbar h1 .e{color:#ffd75e}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:12.8px;opacity:.93}
+.meta-row span{display:inline-flex;align-items:center;gap:6px}
+
+/* ============ 容器 ============ */
+.wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+
+/* ============ 说明卡 ============ */
+.intro{
+  background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);
+  border-radius:var(--r);padding:16px 20px;margin:20px 0 0;box-shadow:var(--shadow);
+}
+.intro h4{font-size:14.5px;color:var(--brand-d);margin-bottom:7px;display:flex;align-items:center;gap:7px}
+.intro ol{padding-left:18px;font-size:13.4px;color:var(--ink-2)}
+.intro li{margin:3px 0}
+.intro b{color:var(--ink)}
+
+/* ============ 地区切换 Tab ============ */
+.tabs-shell{
+  position:sticky;top:0;z-index:50;background:rgba(244,246,249,.93);
+  backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line);
+  margin:18px 0 0;padding:11px 0;
+}
+.tabs{display:flex;gap:9px;overflow-x:auto;padding:2px 24px;max-width:1320px;margin:0 auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab-btn{
+  flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--ink-2);
+  padding:9px 19px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;
+  font-family:inherit;transition:.18s;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;
+}
+.tab-btn:hover{border-color:#c4d6f7;color:var(--brand-d);background:var(--brand-l)}
+.tab-btn.active{
+  background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 4px 12px rgba(22,104,255,.3);
+}
+.tab-btn .cnt{
+  font-size:11px;font-weight:700;background:rgba(255,255,255,.24);padding:1px 7px;border-radius:20px;
+}
+.tab-btn:not(.active) .cnt{background:var(--line-2);color:var(--ink-3)}
+
+/* ============ 面板 ============ */
+.panel{display:none}
+.panel.active{display:block;animation:fade .28s ease}
+@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+
+.panel-head{padding:22px 0 4px}
+.panel-head h2{font-size:20px;font-weight:800;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.panel-head h2 .flag{font-size:23px}
+.panel-head .tagline{font-size:13px;color:var(--ink-3);margin-top:5px}
+
+/* 品类中类 + 筛选 */
+.grp-bar{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  margin:22px 0 12px;padding-bottom:9px;border-bottom:2px solid var(--line-2);
+}
+.grp-bar h3{
+  font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;
+  padding:5px 13px;border-radius:8px;
+}
+.grp-bar h3.fx{background:var(--brand-l);color:var(--brand-d);border-left:4px solid var(--brand)}
+.grp-bar h3.cr{background:#fdeef7;color:#b32a86;border-left:4px solid #e35bad}
+.grp-bar .cnt{margin-left:auto;font-size:12px;color:var(--ink-3);font-weight:600}
+
+/* ============ 卡片栅格 ============ */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+@media (max-width:1080px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:720px){.grid{grid-template-columns:1fr;gap:13px}.wrap,.tabs{padding-left:15px;padding-right:15px}.topbar .wrap{padding:0 15px}}
+
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:15px 16px 13px;box-shadow:var(--shadow);transition:.2s;display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+}
+.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:transparent;transition:.2s}
+.card:hover{box-shadow:var(--shadow-h);border-color:#cfdcee;transform:translateY(-2px)}
+.card.open{border-color:var(--brand);box-shadow:var(--shadow-h)}
+.card.open::before{background:var(--brand)}
+.card.open.cat-cr::before{background:#e35bad}
+.card.hide{display:none}
+
+.c-head{display:flex;align-items:center;gap:8px;margin-bottom:9px;flex-wrap:wrap}
+.num{
+  flex:0 0 auto;min-width:26px;height:23px;padding:0 6px;border-radius:6px;
+  background:var(--brand);color:#fff;font-size:11.5px;font-weight:700;
+  display:inline-flex;align-items:center;justify-content:center;letter-spacing:.02em;
+}
+.card.cat-cr .num{background:#e35bad}
+.c-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;background:var(--brand-l);color:var(--brand-d)}
+.card.cat-cr .c-badge{background:#fdeef7;color:#b32a86}
+.c-date{margin-left:auto;font-size:11.5px;color:var(--ink-3);font-weight:600;font-variant-numeric:tabular-nums}
+
+.c-title{font-size:15px;font-weight:700;line-height:1.5;color:var(--ink);margin-bottom:8px;word-break:break-word}
+.c-title b{color:var(--brand-d)}
+
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}
+.tag{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.02em;white-space:nowrap}
+.t-hot{background:var(--red-bg);color:var(--red)}
+.t-new{background:var(--green-bg);color:var(--green)}
+.t-reg{background:var(--orange-bg);color:var(--orange)}
+.t-date{background:var(--line-2);color:var(--ink-3)}
+.t-cr{background:#f2edfd;color:var(--purple)}
+.t-xtra{background:var(--line-2);color:var(--ink-2)}
+
+/* 摘要折叠 */
+.bd{font-size:13.4px;color:var(--ink-2);max-height:96px;overflow:hidden;position:relative;transition:max-height .25s ease}
+.bd::after{content:'';position:absolute;left:0;right:0;bottom:0;height:34px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff 78%)}
+.card.open .bd{max-height:2400px;overflow:visible}
+.card.open .bd::after{display:none}
+.bd b{color:var(--ink);font-weight:700;background:#fff7db;padding:0 2px;border-radius:3px}
+.card.cat-cr .bd b{background:#fdeef7}
+.bd .hl{color:var(--green);font-weight:700}
+.bd .hl2{color:var(--red);font-weight:700}
+
+.src{
+  margin-top:10px;font-size:12.4px;color:var(--ink-3);background:#f8fafc;
+  border:1px solid var(--line-2);border-radius:8px;padding:8px 10px;
+  overflow-wrap:anywhere;word-break:break-all;line-height:1.65;
+}
+.src a{font-weight:600;overflow-wrap:anywhere;word-break:break-all}
+
+.extra{display:none;margin-top:10px}
+.card.open .extra{display:block;animation:fade .22s ease}
+.chk{
+  padding:9px 11px;background:var(--purple-bg);border-left:3px solid var(--purple);
+  border-radius:0 8px 8px 0;font-size:12.5px;color:#6242ad;line-height:1.66;overflow-wrap:anywhere;word-break:break-all;
+}
+.chk b{color:var(--purple)}
+.chk code{background:#fff;padding:1px 6px;border-radius:4px;font-size:12px}
+.ang{
+  margin-top:8px;padding:9px 11px;background:var(--gold-bg);border-left:3px solid var(--gold);
+  border-radius:0 8px 8px 0;font-size:13px;color:#8a6412;line-height:1.7;
+}
+.ang b{color:#a97600}
+
+.toggle{
+  margin-top:12px;width:100%;border:1px solid var(--line);background:#fbfcfe;color:var(--brand-d);
+  padding:8px;border-radius:8px;font-size:12.8px;font-weight:700;cursor:pointer;font-family:inherit;
+  transition:.18s;display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.toggle:hover{background:var(--brand-l);border-color:#c4d6f7}
+.card.open .toggle{background:var(--brand-l);border-color:#c4d6f7}
+
+/* ============ 提示盒 ============ */
+.note{
+  background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);
+  border-radius:0 var(--r) var(--r) 0;padding:14px 18px;margin:14px 0 0;font-size:13.4px;
+  color:var(--ink-2);box-shadow:var(--shadow);line-height:1.75;
+}
+.note.warn{border-left-color:var(--red)}
+.note.info{border-left-color:var(--brand)}
+.note h4{font-size:14px;margin-bottom:7px;display:flex;align-items:center;gap:7px}
+.note.warn h4{color:var(--red)}
+.note:not(.warn):not(.info) h4{color:#a97600}
+.note.info h4{color:var(--brand-d)}
+.note ul{padding-left:19px;margin:5px 0}
+.note li{margin:4px 0}
+.note b{color:var(--ink)}
+.srcbox{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px 18px;margin:14px 0;font-size:13px;box-shadow:var(--shadow)}
+.srcbox code{background:var(--line-2);padding:1.5px 6px;border-radius:4px;color:var(--brand-d);font-size:12.3px;overflow-wrap:anywhere}
+
+/* ============ 表格 ============ */
+.tbl-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
+th{background:#f7f9fc;padding:11px 13px;text-align:left;font-weight:700;color:var(--brand-d);font-size:12.3px;white-space:nowrap;border-bottom:1px solid var(--line)}
+td{padding:10px 13px;border-top:1px solid var(--line-2);vertical-align:top;overflow-wrap:anywhere}
+tbody tr:hover td{background:#f9fbff}
+td b{color:var(--ink)}
+
+/* ============ 通用区块标题 ============ */
+.sec-title{
+  font-size:19px;font-weight:800;margin:30px 0 4px;padding:13px 16px;
+  background:linear-gradient(90deg,var(--brand-l),rgba(255,255,255,0));
+  border-left:4px solid var(--brand);border-radius:0 var(--r) var(--r) 0;display:flex;align-items:center;gap:9px;
+}
+.sec-sub{font-size:13px;color:var(--ink-3);padding:0 16px;margin-bottom:8px}
+h4.sub-h{font-size:14.5px;color:var(--brand-d);margin:18px 0 2px;display:flex;align-items:center;gap:7px}
+
+/* ============ 底部 ============ */
+.foot{
+  margin:30px 0 0;padding:18px 20px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r) var(--r) 0 0;color:var(--ink-3);font-size:12.5px;box-shadow:var(--shadow);line-height:1.8;
+}
+.foot b{color:var(--ink-2)}
+.bottom-bar{background:var(--topbar-c,#0a2f6b);background:linear-gradient(100deg,#0a2f6b,#1668ff);color:#fff;text-align:center;padding:16px;font-size:12.5px;opacity:.96}
+
+/* 工具条 */
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 0}
+.toolbar .lb{font-size:12.5px;color:var(--ink-3);font-weight:600;margin-right:2px}
+.fbtn{
+  border:1px solid var(--line);background:#fff;color:var(--ink-2);padding:6px 15px;border-radius:999px;
+  font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:.16s;
+}
+.fbtn:hover{border-color:#c4d6f7;color:var(--brand-d);background:var(--brand-l)}
+.fbtn.active{background:var(--brand);border-color:var(--brand);color:#fff}
+.exp-all{margin-left:auto}
+@media (max-width:720px){.exp-all{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+
+<!-- ===================== 顶部品牌条 ===================== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brandline"><span class="dot"></span>WIKIFX CONTENT RESEARCH · 内容策划选题库</div>
+    <h1>四地区外汇与虚拟货币 · <span class="e">行业新闻选题库</span></h1>
+    <div class="meta-row">
+      <span>📅 生成日期：2026年10月22日（周四）</span>
+      <span>🎯 用途：WikiFX 内容策划</span>
+      <span>⏱ 数据窗口：2026-10-01 — 2026-10-22</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 说明 ===================== -->
+<div class="wrap">
+  <div class="intro">
+    <h4>📘 本次方法论调整说明（相对前几版）</h4>
+    <ol>
+      <li>不再引用 WikiFX 自家文章作为新闻出处 —— 改为<b>从行业媒体抓新闻，交易商只作为「核查标的」</b>，WikiFX/WikiBit 作为检索入口放在每条末尾。</li>
+      <li>时间窗口从「当日」放宽到<b>近 7—30 天</b>，因为交易商层面的合规/处罚/并购事件本身就不是每天发生。</li>
+      <li>增加了「选题角度」栏 —— 每条给出可以直接落笔的切入方式，而不是只给事实罗列。</li>
+    </ol>
+  </div>
+  <div class="intro" style="border-left-color:var(--ink-3);margin-top:12px">
+    <h4 style="color:var(--ink-2)">🗂 取材源与结构</h4>
+    <div style="font-size:13.4px;color:var(--ink-2);line-height:1.8">
+      取材源：fxnewsgroup.com（国际外汇）、CryptoCity／ABMedia／Zombit（中国台湾地区加密）、FXStreet 繁中／匯通財經／金十數據（外汇行情）、RBI／Informist／Moneylife（印度）、WikiFX 评测库（各地经纪商）<br>
+      结构：一级＝地区，二级＝外汇／虚拟货币。每条含「新闻事实 + 原文出处 + 交易商核查入口 + 选题角度」。
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 地区切换 ===================== -->
+<div class="tabs-shell">
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="global" role="tab">🌐 全球<span class="cnt">22</span></button>
+    <button class="tab-btn" data-tab="jp" role="tab">🇯🇵 日本<span class="cnt">9</span></button>
+    <button class="tab-btn" data-tab="tw" role="tab">🇨🇳 台湾<span class="cnt">9</span></button>
+    <button class="tab-btn" data-tab="in" role="tab">🇮🇳 印度<span class="cnt">5</span></button>
+    <button class="tab-btn" data-tab="id" role="tab">🇮🇩 印度尼西亚<span class="cnt">5</span></button>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ===================== 全球面板 ===================== -->
+<section class="panel active" id="p-global">
+  <div class="panel-head">
+    <h2><span class="flag">🌐</span>国际外汇行业（FX News Group）</h2>
+    <div class="tagline">本板块不分地区，是各地选题都可以引用的上游事实源。全部为 10/16—10/21 真实新闻。</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="lb">品类筛选：</span>
+    <button class="fbtn active" data-filter="all" data-scope="global">全部</button>
+    <button class="fbtn" data-filter="fx" data-scope="global">💱 外汇</button>
+    <button class="fbtn" data-filter="cr" data-scope="global">🪙 虚拟货币</button>
+    <button class="fbtn exp-all" data-expand-all="global">展开全部卡片</button>
+  </div>
+
+  <!-- 分组 1 -->
+  <div class="grp-bar">
+    <h3 class="fx">💱 零售外汇交易商动态</h3>
+    <span class="cnt">9 条</span>
+  </div>
+  <div class="grid">
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">1</span><span class="c-badge">零售外汇</span><span class="c-date">10/21</span></div>
+      <div class="c-title">FOREX.com 在日本上线美股 ETF 的<b>周末 CFD 交易</b></div>
+      <div class="tags"><span class="tag t-new">最新</span><span class="tag t-hot">重点</span><span class="tag t-xtra">日本强相关</span></div>
+      <div class="bd">StoneX 旗下的零售外汇品牌 FOREX.com 宣布，自 10/21 起在日本市场为 US SP 500 与 US Tech 100 的 CFD 提供<b>周末交易时段</b>。这是少见地针对单一国家零售客户单独开放的产品扩展 —— 日本零售外汇客户一向偏好股指 CFD 且对周末避险敞口敏感，此举被视为在日元交易之外寻找新增长曲线。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/forex-com-launches-weekend-trading-for-us-sp-500-and-us-tech-100-cfds-in-japan/" target="_blank" rel="noopener">FX News Group — FOREX.com launches weekend trading for US SP 500 and US Tech 100 CFDs in Japan（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：FOREX.com（StoneX 系）→ <a href="https://www.wikifx.com/en/search?keyword=Forex.com" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Forex.com</a></div>
+        <div class="ang">💡 选题角度：日本零售外汇的产品同质化已经严重到要靠「交易时段」做差异。可以写一篇《日本零售外汇的下一战场：从点差到交易时段》，对比日本持牌系（GMO／DMM／SBI）与外资系的产品策略分化。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">2</span><span class="c-badge">零售外汇</span><span class="c-date">10/21</span></div>
+      <div class="c-title">Interactive Brokers 推出 <b>Autonomous Trading</b>（AI 代客监控7.5万标的）</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">盈透证券宣布面向合格客户开放「自主交易」功能：客户可授权已接入的 AI，对全球 <b>75,000 多只股票、期权和 ETF</b> 进行监控。这是主流券商第一次把「授权 AI」而非「AI 辅助」做成正式产品线。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/interactive-brokers-launches-autonomous-trading/" target="_blank" rel="noopener">FX News Group — Interactive Brokers launches Autonomous Trading（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Interactive Brokers → <a href="https://www.wikifx.com/en/search?keyword=Interactive+Brokers" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Interactive+Brokers</a></div>
+        <div class="ang">💡 选题角度：「AI 代客交易」的责任边界问题 —— 亏损算谁？可以直接做投资者教育：授权 AI ≠ 保本，且目前<b>没有任何监管沙盒覆盖「AI 代客下单」的适当性义务</b>。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">3</span><span class="c-badge">零售外汇</span><span class="c-date">10/20</span></div>
+      <div class="c-title">Plus500 收购巴西券商 <b>Guru</b>，切入拉美</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">Plus500 Ltd（LON:PLUS）已<b>有条件同意</b>收购 Guru Corretora de Títulos e Valores Mobiliários Ltda 的全部股权 —— 后者是巴西持牌的 broker-dealer。这是 Plus500 近期在合规辖区内又一次通过收购而非自设主体拿牌照的动作。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/plus500-to-acquire-brazil-based-broker-dealer-guru/" target="_blank" rel="noopener">FX News Group — Plus500 to acquire Brazil-based broker-dealer Guru（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Plus500 → <a href="https://www.wikifx.com/en/search?keyword=Plus500" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Plus500</a></div>
+        <div class="ang">💡 选题角度：可以横向拉一条「大型零售券商的牌照并购年表」 —— 为什么头部平台越来越倾向于<b>买牌照</b>而不是申请牌照？监管成本、时间成本、以及 MiCA/FCA 环境下的牌照稀缺性。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">4</span><span class="c-badge">零售外汇</span><span class="c-date">10/20</span></div>
+      <div class="c-title">XS.com 从 Vantage 挖角 <b>Mariana Higa</b> 负责拉美市场</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">XS.com 宣布聘任 Mariana Higa 负责 LATAM 市场营销，此前她在竞争对手 Vantage 任职。这类明星高管的跨公司对调，通常是某一区域即将加大投放的信号。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/executives/xs-com-hires-mariana-higa-from-vantage-for-latam-marketing/" target="_blank" rel="noopener">FX News Group — XS.com hires Mariana Higa from Vantage for LATAM marketing（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：XS.com ／ Vantage → <a href="https://www.wikifx.com/en/search?keyword=XS.com" target="_blank" rel="noopener">XS.com</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=Vantage" target="_blank" rel="noopener">Vantage</a></div>
+        <div class="ang">💡 选题角度：XS.com 近年在亚洲社群渗透很快，但监管架构偏多层离岸。适合做「雇佣同一批 KOL 的两家平台，牌照质量差多少」的对比评测。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">5</span><span class="c-badge">零售外汇</span><span class="c-date">10/20</span></div>
+      <div class="c-title">Webull 定档 <b>2026年11月</b>推出永续期货</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">Webull Corp（NASDAQ:BULL）宣布将于 11 月向符合条件的美国客户提供<b>永续期货</b>，并与 Kalshi 有关联。这是传统券商产品进一步向加密交易形态靠拢的标志。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/webull-schedules-launch-of-perpetual-futures-for-november-2026/" target="_blank" rel="noopener">FX News Group — Webull schedules launch of perpetual futures for November 2026（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Webull → <a href="https://www.wikifx.com/en/search?keyword=Webull" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Webull</a></div>
+        <div class="ang">💡 选题角度：传统券商正在把永续合约、预测市场这些「加密原生产品」包进合规壳。选题可落在<b>「散户保护：同样是永续，在 Webull 和在境外加密所买，法律关系差在哪」</b>。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">6</span><span class="c-badge">零售外汇</span><span class="c-date">10/19</span></div>
+      <div class="c-title">Moomoo 上线美股期权<b>延长交易时段</b>（对接 Cboe）</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">Moomoo 宣布投资者可在 Cboe Options Exchange 新的盘前与收盘后交易时段开放当天即接入交易。与第 1 条 FOREX.com 的周末交易形成呼应 ——  lengthening trading hours 正成为 2026 年券商产品的主战场。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/moomoo-launches-extended-trading-hours-for-u-s-listed-options/" target="_blank" rel="noopener">FX News Group — Moomoo launches extended trading hours for U.S. listed options（2026-10-19）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Moomoo → <a href="https://www.wikifx.com/en/search?keyword=Moomoo" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Moomoo</a></div>
+        <div class="ang">💡 选题角度：和 NO.1 合并做<b>《2026 券商产品创新只剩「延长交易时间」了吗》</b> —— 把两家放在一起看趋势，比单独报一条更有可读性。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">7</span><span class="c-badge">零售外汇</span><span class="c-date">10/21</span></div>
+      <div class="c-title">前 oneZero 高管 Bazil De Bruyn 创办经纪商顾问公司 <b>Elevate Edge</b></div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">前 oneZero 高管创办 Elevate Edge，主打「业务诊断 + 已筛选供应商组合」，并明确表示会跟进到客户看到 ROI 为止。反映了流动性/桥接技术供应商侧正在出现独立顾问角色。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/former-onezero-exec-bazil-de-bruyn-launches-broker-tech-advisory-firm-elevate-edge/" target="_blank" rel="noopener">FX News Group — Former oneZero exec Bazil De Bruyn launches broker tech advisory firm Elevate Edge（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：偏 B 端。适合给「开一家外汇经纪商要花多少钱」这类科普文提供行业侧证 —— 技术服务商生态的成熟也意味着<b>白标门槛在持续下降，黑平台更容易诞生</b>。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">8</span><span class="c-badge">零售外汇</span><span class="c-date">10/21</span></div>
+      <div class="c-title">Robinhood Ventures 以 <b>$3,000万</b>购入 Erebor Bank 优先股</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">Robinhood Ventures Fund I（NYSE:RVI）宣布购入 $30 million 的 Erebor Bank, National Association 优先股。Robinhood 正在用一只公开上市基金把资金投向加密友好银行。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/robinhood-ventures-fund-i-purchases-30m-of-preferred-stock-in-erebor-bank/" target="_blank" rel="noopener">FX News Group — Robinhood Ventures Fund I purchases $30M of Preferred Stock in Erebor Bank（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：券商系基金入股银行 —— 零售券商正在往「基础设施」上溯。可作为加密-传统金融融合趋势的一条佐证。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">9</span><span class="c-badge">零售外汇</span><span class="c-date">10/20</span></div>
+      <div class="c-title">Equiti Group 续约青年足球联赛冠名，主打金融教育</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">Equiti 表示将继续冠名青年足球联赛，并加入金融教育与更广泛的倡议。外汇行业的体育冠名投放仍在持续，且越来越强调「金融素养」叙事。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/equiti-group-renews-title-partnership-with-the-youth-football-league/" target="_blank" rel="noopener">FX News Group — Equiti Group renews title partnership with the Youth Football League（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Equiti → <a href="https://www.wikifx.com/en/search?keyword=Equiti" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Equiti</a></div>
+        <div class="ang">💡 选题角度：体育营销是黑平台的经典洗白套路。可以做一期《警惕：有平台用体育冠名制造「可信」错觉》—— 提醒读者冠名不等于受德国/英国监管。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+
+  <!-- 分组 2 -->
+  <div class="grp-bar">
+    <h3 class="fx">⚖️ 监管处罚（可直接做「曝光向」选题）</h3>
+    <span class="cnt">7 条</span>
+  </div>
+  <div class="grid">
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">10</span><span class="c-badge">监管处罚</span><span class="c-date">10/19</span></div>
+      <div class="c-title"><b>FCA 吊销 Startrader Pro Limited</b> 全部受监管活动许可</div>
+      <div class="tags"><span class="tag t-reg">监管处罚</span><span class="tag t-hot">重点</span></div>
+      <div class="bd">英国金融行为监管局（FCA）于 10 月 19 日就 Startrader Pro Limited 发出<b>最终通知（Final Notice）</b>，取消其继续开展受监管活动的许可。Startrader 是活跃于中文与亚洲市场的品牌，这一类「英国实体牌照被吊销但离岸主体继续拉客」的结构，是典型的区分主看点。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/regulatory/fca-cancels-startrader-pro-limiteds-permission-to-carry-on-regulated-activities/" target="_blank" rel="noopener">FX News Group — FCA cancels Startrader Pro Limited's permission to carry on regulated activities（2026-10-19）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Startrader → <a href="https://www.wikifx.com/en/search?keyword=Startrader" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Startrader</a>（建议重点核对：<b>英国 FCA 已吊销 vs 离岸实体仍在运营</b>的双层结构）</div>
+        <div class="ang">💡 选题角度：这条最适合四地区通用。切法 —— <b>「同一个品牌，两种身份」</b>：英国实体被吊照，但面向你所在地区的可能是另一个离岸公司。教读者看「我的合同签约主体到底是哪一家」。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">11</span><span class="c-badge">监管处罚</span><span class="c-date">10/16</span></div>
+      <div class="c-title">CySEC 对 Titanedge Securities 开出 <b>€10万</b>罚款</div>
+      <div class="tags"><span class="tag t-reg">监管处罚</span></div>
+      <div class="bd">塞浦路斯证监会（CySEC）宣布对 Titanedge Securities Ltd 处以<b>总计 10 万欧元</b>罚款。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/regulatory/cysec-imposes-fines-of-e100k-on-titanedge-securities/" target="_blank" rel="noopener">FX News Group — CySEC imposes fines of €100k on Titanedge Securities（2026-10-16）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Titanedge Securities → <a href="https://www.wikifx.com/en/search?keyword=Titanedge" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Titanedge</a></div>
+        <div class="ang">💡 选题角度：CySEC 是亚洲客户最常接触到的「欧洲牌照」之一。可以做科普 —— <b>CySEC 罚款到底意味着什么？哪些罚单会真的吊销牌照，哪些只是「交了钱继续做」</b>。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">12</span><span class="c-badge">监管处罚</span><span class="c-date">10/20</span></div>
+      <div class="c-title">德国 BaFin 对<b>野村控股（Nomura Holdings）</b>罚款 €32万</div>
+      <div class="tags"><span class="tag t-reg">监管处罚</span><span class="tag t-hot">日本</span></div>
+      <div class="bd">德国联邦金融监管局（BaFin）宣布对 Nomura Holdings Inc. 处以 32 万欧元的行政罚款。这是近一个月内少见的、针对日本金融机构的欧盟辖区处罚。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/regulatory/german-watchdog-imposes-e320k-fine-on-nomura-holdings/" target="_blank" rel="noopener">FX News Group — German watchdog imposes €320k fine on Nomura Holdings（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：证明「大机构也会被罚」。可用于打破散户的心理误区 —— <b>机构背景 ≠ 零违规记录</b>，看处罚史比看品牌更重要。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">13</span><span class="c-badge">监管处罚</span><span class="c-date">10/16</span></div>
+      <div class="c-title">FCA 撤销对 <b>LIBOR 操纵案</b> 四名前交易员的禁令（上诉成功）</div>
+      <div class="tags"><span class="tag t-reg">监管处罚</span></div>
+      <div class="bd">FCA 在上诉法院推翻相关定罪后，撤销了此前对 Colin Bermingham、Philippe Moryoussef、Jonathan Mathew 与 Christian Bittar 四人的禁令。这是近十年来 LIBOR 操纵案最重要的司法反转之一。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/regulatory/fca-revokes-bans-on-colin-bermingham-philippe-moryoussef-jonathan-mathew-and-christian-bittar/" target="_blank" rel="noopener">FX News Group — FCA revokes bans on Colin Bermingham, Philippe Moryoussef, Jonathan Mathew and Christian Bittar（2026-10-16）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：极佳的「深度回顾」素材。<b>十年后 LIBOR 案被翻案 —— 当年被定罪的交易员，如今禁令被撤销</b>。适合做时间线长文，也能顺带讲清 LIBOR→SOFR 的转换史。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">14</span><span class="c-badge">监管处罚</span><span class="c-date">10/21</span></div>
+      <div class="c-title">FCA 禁入 Vector Wealth 前 CEO；ASIC 取消顾问牌照</div>
+      <div class="tags"><span class="tag t-reg">监管处罚</span></div>
+      <div class="bd">FCA 禁止 Vector Wealth Ltd 前首席执行官 Jeffrey Dawkins 从业；同日 ASIC 取消新南威尔士州财务顾问 Kyle Clifford Frost 的澳洲金融服务（AFS）牌照（牌照号 543780）。另外 10/16 ASIC 还禁止了 MWL Financial Services 前顾问 Pardeep Singh 从业四年。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/regulatory/fca-bans-former-ceo-of-vector-wealth/" target="_blank" rel="noopener">FX News Group — FCA bans former CEO of Vector Wealth（2026-10-21）</a> ｜ <a href="https://fxnewsgroup.com/forex-news/regulatory/asic-cancels-licence-of-financial-adviser-kyle-clifford-frost/" target="_blank" rel="noopener">ASIC cancels licence of financial adviser Kyle Clifford Frost（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：把 10/16—10/21 这五天内各国监管动作汇总成一篇 <b>《一周全球监管罚单榜》</b> —— 固定栏目化，读者会形成订阅预期。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">15</span><span class="c-badge">监管处罚</span><span class="c-date">10/21</span></div>
+      <div class="c-title">FINRA 就<b>规则违规</b>对高盛罚款</div>
+      <div class="tags"><span class="tag t-reg">监管处罚</span></div>
+      <div class="bd">美国金融业监管局（FINRA）就涉嫌违反相关规则，对 Goldman Sachs &amp; Co. LLC 处以罚款。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/regulatory/finra-fines-goldman-sachs-for-alleged-rule-violations-2/" target="_blank" rel="noopener">FX News Group — FINRA fines Goldman Sachs for alleged rule violations（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：作为「没有一个辖区的人是干净的」系列佐证，与 NO.12 野村被罚配对使用更有张力。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">16</span><span class="c-badge">监管处罚</span><span class="c-date">10/20</span></div>
+      <div class="c-title">Panacea Capital 董事 Brian Creigh 遭<b>刑事指控</b>（ASIC 主导）</div>
+      <div class="tags"><span class="tag t-cr">虚拟货币</span><span class="tag t-reg">监管处罚</span></div>
+      <div class="bd">Brian Jacques Creigh 被控<b>在无澳洲金融服务（AFS）牌照的情况下经营金融服务业</b>，以及处理犯罪所得。这是近期少见的从行政升级到刑事的加密相关案件。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/cryptocurrency/panacea-capital-director-faces-criminal-charges/" target="_blank" rel="noopener">FX News Group — Panacea Capital director faces criminal charges（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：可以做《加密诈骗的量刑正在变重》—— 从「罚款了事」到「刑事起诉」，监管工具箱正在升级，这是 2026 年明显的趋势转折。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+
+  <!-- 分组 3 -->
+  <div class="grp-bar">
+    <h3 class="fx">🏦 机构与交易所（机构面 / 可作为背景板）</h3>
+    <span class="cnt">6 条</span>
+  </div>
+  <div class="grid">
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">17</span><span class="c-badge">机构与交易所</span><span class="c-date">10/21</span></div>
+      <div class="c-title">渣打银行达成收购 <b>Zodia Custody</b> 的最终协议</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">Standard Chartered 已就收购 Zodia Custody 签订最终协议。传统大行进一步向加密托管深水区推进。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/institutional/standard-chartered-enters-into-definitive-agreements-to-acquire-zodia-custody/" target="_blank" rel="noopener">FX News Group — Standard Chartered enters into definitive agreements to acquire Zodia Custody（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：大行进场的叙事在 2026 已经不新鲜，但可以做<b>反向选题</b>：银行系托管真的比交易所自托管安全吗？托管的对手方风险在哪。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">18</span><span class="c-badge">机构与交易所</span><span class="c-date">10/20</span></div>
+      <div class="c-title">Tradeweb 以 <b>$19.7亿</b> 收购 Trumid</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">固定收益电子交易平台 Tradeweb 宣布收购 Trumid，交易金额 <b>19.7 亿美元</b>。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/institutional/tradeweb-to-acquire-trumid-for-1-97bn/" target="_blank" rel="noopener">FX News Group — Tradeweb to acquire Trumid for $1.97bn（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：机构交易平台的整合潮，可与零售券商整合潮做对照。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">19</span><span class="c-badge">机构与交易所</span><span class="c-date">10/21</span></div>
+      <div class="c-title"><b>大阪交易所</b> Pocket Gold 100 期货 10 月交易量激增</div>
+      <div class="tags"><span class="tag t-new">最新</span><span class="tag t-hot">日本</span></div>
+      <div class="bd">Osaka Exchange 报告，其 <b>Pocket Gold 100（ミニ金）期货</b>在 2026 年 10 月交易量显著飙升。小面额黄金期货的放量，通常对应散户在金价高位下的投机需求上升。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/exchanges/osaka-exchange-reports-surge-in-trading-in-pocket-gold-100-futures-in-october-2026/" target="_blank" rel="noopener">FX News Group — Osaka Exchange reports surge in trading in Pocket Gold 100 Futures in October 2026（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：日本散户正在把资金从 FX 挪向商品。<b>《日元不好做，日本散户开始炒迷你黄金》</b> —— 这条能同时服务日本地区的汇市选题和贵金属选题。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">20</span><span class="c-badge">机构与交易所</span><span class="c-date">10/20—21</span></div>
+      <div class="c-title">CME 首批 <b>Bitcoin Cash 与 Uniswap 期货</b>成交；Q3 收入 $17亿</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">CME Group 报告 Bitcoin Cash 与 Uniswap 期货的首笔成交，同时公布 2026 年 Q3 收入 <b>17 亿美元</b>。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/exchanges/cme-group-reports-first-trade-in-bitcoin-cash-and-uniswap-futures/" target="_blank" rel="noopener">CME 期货首笔成交（10/20）</a> ｜ <a href="https://fxnewsgroup.com/forex-news/exchanges/cme-group-registers-q3-2026-revenue-of-1-7bn/" target="_blank" rel="noopener">CME Q3 收入（10/21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：受监管交易所上线山寨币期货，本身就是「传统金融给加密资产背书」的信号。"</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">21</span><span class="c-badge">机构与交易所</span><span class="c-date">10/21</span></div>
+      <div class="c-title">支付与时事：Corpay 成为<b>纽卡斯尔联</b>官方 FX 合作伙伴；Nuvei 获以色列牌照</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">企业支付商 Corpay 成为 Newcastle United 的官方外汇合作伙伴；加拿大支付公司 Nuvei 获得以色列直接收单牌照。两家都是跨境 FX 与支付链条上的关键角色。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/payments/corpay-named-official-fx-partner-of-newcastle-united/" target="_blank" rel="noopener">Corpay × Newcastle United（10/21）</a> ｜ <a href="https://fxnewsgroup.com/forex-news/payments/nuvei-obtains-direct-acquiring-license-in-israel/" target="_blank" rel="noopener">Nuvei 以色列牌照（10/21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：外汇不只关于「经纪商」，企业侧跨境支付一直是被忽略的选题金矿。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">22</span><span class="c-badge">机构与交易所</span><span class="c-date">10/21</span></div>
+      <div class="c-title">人事动向：Euroclear Bank 新 CEO、B2C2 新 COO</div>
+      <div class="tags"><span class="tag t-new">最新</span></div>
+      <div class="bd">Guillaume Eliet 被任命为 Euroclear Bank 首席执行官；加密做市商 B2C2 任命 AZA Finance 创始人 Elizabeth Rossiello 出任 COO。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/executives/guillaume-eliet-appointed-as-chief-executive-officer-of-euroclear-bank/" target="_blank" rel="noopener">Euroclear Bank CEO（10/21）</a> ｜ <a href="https://fxnewsgroup.com/forex-news/executives/b2c2-appoints-aza-finance-founder-elizabeth-rossiello-as-coo/" target="_blank" rel="noopener">B2C2 COO（10/21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：高层人事变动往往是战略转向的先行指标，适合作为观察型短讯。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== 日本面板 ===================== -->
+<section class="panel" id="p-jp">
+  <div class="panel-head">
+    <h2><span class="flag">🇯🇵</span>日本</h2>
+    <div class="tagline">USD/JPY 亚市早盘守稳 158.00 上方 · 下一节点：10/28–29 FOMC、10/29–30 BOJ 会议 · 可查交易商：外汇持牌 10 家 + GAIA 等 WikiBit 标的</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="lb">品类筛选：</span>
+    <button class="fbtn active" data-filter="all" data-scope="jp">全部</button>
+    <button class="fbtn" data-filter="fx" data-scope="jp">💱 外汇</button>
+    <button class="fbtn" data-filter="cr" data-scope="jp">🪙 虚拟货币</button>
+    <button class="fbtn exp-all" data-expand-all="jp">展开全部卡片</button>
+  </div>
+
+  <div class="grp-bar"><h3 class="fx">💱 外汇行情 ＋ 外汇交易商消息</h3><span class="cnt">5 条</span></div>
+  <div class="grid">
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">J1</span><span class="c-badge">💱 外汇行情</span><span class="c-date">10/22</span></div>
+      <div class="c-title">USD/JPY 延续区间整理，市场在两大央行会议前选择观望</div>
+      <div class="tags"><span class="tag t-new">最新</span><span class="tag t-date">FXStreet 繁中</span></div>
+      <div class="bd">周四亚洲时段，美元/日元在 <b>158.00 关口上方持稳</b>，延续本月初以来在多重相反力量作用下形成的盘整走势。交易员不愿激进押注方向 —— 美联储将于 <b>10 月 28 日</b>两天会议结束时公布利率决议，日本央行则在 <b>10 月 29—30 日</b>召开会议。这两场会议是本月日元的最大变量。</div>
+      <div class="src">📎 出处：<a href="https://www.fxstreet.hk/news/ri-yuan-dui-mei-yuan-yan-xu-qu-jian-bo-dong-jiao-dian-reng-zai-xia-zhou-de-mei-lian-chu-he-ri-ben-yang-xing-hui-yi-shang-202610220153" target="_blank" rel="noopener">FXStreet 繁体中文 — 日圓兌美元延續區間波動，焦點仍在下週的美聯儲和日本央行會議上（2026-10-22 01:53 GMT）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：不要用「日元要涨/要跌」，用<b>「会议前该不该持有日元头寸」</b>的操作类标题。两大央行在同一周开会，是少见的排版窗口。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">J2</span><span class="c-badge">💱 外汇交易商</span><span class="c-date">10/21</span></div>
+      <div class="c-title">FOREX.com 在日本上线周末股指 CFD —— 外资券商在日差异化竞争</div>
+      <div class="tags"><span class="tag t-hot">日本强相关</span><span class="tag t-new">10/21</span></div>
+      <div class="bd">详见国际板块 NO.1。这条对日本地区的意义在于：<b>日本零售外汇市场是一个被持牌系高度垄断、但产品高度同质化的市场</b>。外资品牌只能用交易时段、品种数量做切口。FOREX.com 由 StoneX 背书，在日本是通过持牌主体展业。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/retail-forex/forex-com-launches-weekend-trading-for-us-sp-500-and-us-tech-100-cfds-in-japan/" target="_blank" rel="noopener">FX News Group — FOREX.com launches weekend trading ... in Japan（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：<a href="https://www.wikifx.com/en/search?keyword=Forex.com" target="_blank" rel="noopener">FOREX.com</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=StoneX" target="_blank" rel="noopener">StoneX</a></div>
+        <div class="ang">💡 选题角度：<b>「同一家品牌，在日本和在你所在地用的是同一个牌照吗？」</b> —— 这条可以同时服务日本和中国台湾地区读者，讲「品牌 ≠ 统一监管」。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">J3</span><span class="c-badge">💱 交易所动态</span><span class="c-date">10/21</span></div>
+      <div class="c-title">大阪交易所迷你黄金期货 10 月交易量激增 —— 日本散户资金在搬家</div>
+      <div class="tags"><span class="tag t-date">详见 NO.19</span></div>
+      <div class="bd">详见国际板块 NO.19。Pocket Gold 100（小面额黄金期货）在 10 月录得交易量大幅上升。在日本这是一个很具体的信号：<b>散户交易偏好正在从日元交叉盘转向商品</b>。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/exchanges/osaka-exchange-reports-surge-in-trading-in-pocket-gold-100-futures-in-october-2026/" target="_blank" rel="noopener">FX News Group — Osaka Exchange reports surge in trading in Pocket Gold 100 Futures in October 2026（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：<b>《日本散户不炒汇了？迷你黄金期货 10 月爆量》</b>。这条可以和金价 4,000 美元关口的拉扯（见匯通財經 NO.J5）配成一篇。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">J4</span><span class="c-badge">💱 外汇交易商</span><span class="c-date">10/07</span></div>
+      <div class="c-title">DMM FX 自 10/7 起收窄五个交叉盘与交叉货币对的基准点差</div>
+      <div class="tags"><span class="tag t-new">10/7</span><span class="tag t-xtra">官方公告</span></div>
+      <div class="bd">株式会社 DMM.com 証券公告，自 2026 年 10 月 7 日 18:00 起缩小以下品种的基准点差：NZD/JPY 0.7銭→<b>0.6銭</b>、ZAR/JPY 1.0銭→<b>0.8銭</b>、TRY/JPY 1.4銭→<b>1.2銭</b>、GBP/USD 1.0pips→<b>0.6pips</b>、EUR/GBP 1.0pips→<b>0.9pips</b>（均为核心时段 09:00—次日 05:00 基准值）。DMM 同时提醒：上述点差<b>并非固定点差</b>，突发事件或流动性低下时会扩大。</div>
+      <div class="src">📎 出处：<a href="https://www.gifu-np.co.jp/articles/-/781883" target="_blank" rel="noopener">岐阜新聞デジタル — NZD/JPY、ZAR/JPY、TRY/JPY、GBP/USD、EUR/GBP 基準スプレッド縮小のお知らせ（2026-10-07，DMM.com証券）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：DMM.com証券（関東財務局長（金商）第1629号）→ <a href="https://www.wikifx.com/en/search?keyword=DMM" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=DMM</a></div>
+        <div class="ang">💡 选题角度：拿官方公告做点差科普最有说服力 —— <b>「基准点差」和「实际点差」不是一回事</b>，而且公告里自己就写了「非固定」。这是极好的投资者教育素材，还不会被质疑「抹黑」。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">J5</span><span class="c-badge">💱 制度素材</span><span class="c-date">2026-09-25 快照</span></div>
+      <div class="c-title">日本持牌零售外汇券商名单（制度性背景，可长期引用）</div>
+      <div class="tags"><span class="tag t-reg">非当日新闻</span><span class="tag t-xtra">长期可用</span></div>
+      <div class="bd">日本国内 OTC 外汇是<b>严格的注册制</b>，持牌第一種金融商品取引業者（FFAJ OTC FX 注册名单，2026-09-25 快照）可参考：GMOクリック証券（第77号）、DMM.com証券（第1629号）、外為どっとコム（第262号）、SBI FXトレード（第2635号）、トレイダーズ証券（第123号）、GMO外貨（第271号）、IG証券（第255号）、OANDA証券（第2137号）、サクソバンク証券（第239号）、Plus500JP証券（第156号）。<br>⚠️ 重要提醒：报告/科普中写这些号时要注明「<b>登録は推奨でも保証でもない</b>」，且金商编号须由 FSA 登入检索（search.fsa.go.jp）核实，不能当作背书。</div>
+      <div class="src">📎 出处：<a href="https://brokermafia.com/best-forex-brokers-japan-october-2026" target="_blank" rel="noopener">BrokerMafia — Best Japanese Forex Brokers October 2026（含 FFAJ 金商编号清单）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：GMOクリック → <a href="https://www.wikifx.com/en/search?keyword=GMO+Click" target="_blank" rel="noopener">GMO Click</a> ｜ SBI FXトレード → <a href="https://www.wikifx.com/en/search?keyword=SBI+FX" target="_blank" rel="noopener">SBI FX</a> ｜ 外為どっとコム → <a href="https://www.wikifx.com/en/search?keyword=Gaitame" target="_blank" rel="noopener">Gaitame</a></div>
+        <div class="ang">💡 选题角度：<b>日本是有明确金商编号可查的市场</b> —— 这正是 WikiFX 可以发挥的场景。做一篇《在日本做外汇，怎么用一个编号查券商真伪》。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+
+  <div class="grp-bar"><h3 class="cr">🪙 虚拟货币行情 ＋ 虚拟货币交易商消息</h3><span class="cnt">4 条</span></div>
+  <div class="grid">
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">J6</span><span class="c-badge">🪙 并购动向</span><span class="c-date">10/20</span></div>
+      <div class="c-title"><b>Bitget 从 GMO Internet 手中收购泰国 Cryptonomics</b></div>
+      <div class="tags"><span class="tag t-hot">10/20</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">Bitget 收购 GMO-Z.com Cryptonomics (Thailand) —— 后者是泰国持有牌照的数字资产交易所兼经纪商。对日本市场而言，看点是<b>日本 GMO 系正在退出泰国的加密实体运营</b>，由国际所接手。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/cryptocurrency/bitget-acquires-cryptonomics-from-gmo-to-expand-into-thailand/" target="_blank" rel="noopener">FX News Group — Bitget acquires Cryptonomics from GMO to expand into Thailand（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiBit 核查：Bitget → <a href="https://www.wikibit.com/zh-cn/exchanges/bitget" target="_blank" rel="noopener">https://www.wikibit.com/zh-cn/exchanges/bitget</a></div>
+        <div class="ang">💡 选题角度：<b>《日本大厂在亚洲加密市场的撤退与攻守》</b> —— 泰国牌照是东南亚最难拿的之一，GMO 出让给 Bitget，值得写一篇「日本资本 vs 国际所」的东南亚格局分析。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">J7</span><span class="c-badge">🪙 稳定币</span><span class="c-date">10/21</span></div>
+      <div class="c-title">SBI XDC Network APAC 与 SBI VC Trade 同 Shinhan Card 签署 MoU（日元稳定币场景）</div>
+      <div class="tags"><span class="tag t-reg">PoC 阶段</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">SBI XDC Network APAC 与 SBI VC Trade 已和韩国新韩卡（Shinhan Card）签署谅解备忘录。这延续了 10/20 在东京签约的日韩稳定币合作脉络。<br>⚠️ 发布红线：据此前核实，相关项目目前仅为 <b>PoC / MoU 阶段</b>，<span class="hl2">没有上线、也没有具体上线日期</span>。切勿写成「已开通日元稳定币支付」。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/payments/sbi-xdc-network-apac-sbi-vc-trade-sign-mou-with-shinhan-card/" target="_blank" rel="noopener">FX News Group — SBI XDC Network APAC, SBI VC Trade sign MoU with Shinhan Card（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiBit 核查：SBI VC Trade → <a href="https://www.wikibit.com/zh-cn/exchanges/sbi-vc-trade" target="_blank" rel="noopener">https://www.wikibit.com/zh-cn/exchanges/sbi-vc-trade</a></div>
+        <div class="ang">💡 选题角度：日韩稳定币跨境是长期题材，建议做成<b>连载追踪</b>而不是单篇 —— MoU→PoC→商用每一步都单发一篇。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">J8</span><span class="c-badge">🪙 监管处罚</span><span class="c-date">10/20</span></div>
+      <div class="c-title">BaFin 对野村控股罚款 €32万 —— 「日本大机构也会被罚」</div>
+      <div class="tags"><span class="tag t-reg">10/20</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">详见国际板块 NO.12。日本地区可单独成篇的重点是：<b>这是日本金融机构在欧盟辖区被罚</b>，说明「日本背景 ≠ 在任何地方都干净」。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/regulatory/german-watchdog-imposes-e320k-fine-on-nomura-holdings/" target="_blank" rel="noopener">FX News Group — German watchdog imposes €320k fine on Nomura Holdings（2026-10-20）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：日本读者对野村极为熟悉，用「野村被德国罚了」做标题，点击率会明显高于泛泛的监管新闻。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">J9</span><span class="c-badge">🪙 ETF / 监管</span><span class="c-date">10/20</span></div>
+      <div class="c-title">全球：FINMA 批准瑞士首档零售可直接投资比特币现货 ETF</div>
+      <div class="tags"><span class="tag t-new">10/20</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">瑞士金融市场监管局批准了首档直接持有比特币、面向零售投资者的基金。FINMA 强调以投资者保护与透明度为先。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/cryptocurrency/finma-approves-switzerlands-first-bitcoin-etf/" target="_blank" rel="noopener">FX News Group — FINMA approves Switzerland's first Bitcoin ETF（2026-10-20）</a> ｜ <a href="https://www.cryptocity.tw/news/swiss-finma-approves-first-retail-spot-bitcoin-etf" target="_blank" rel="noopener">加密城市 — 瑞士金管局批准首档直接持有比特币现货 ETF（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：<b>把「监管审批」和「实际能不能买」拆开讲</b> —— 瑞士批了，但你所在的地区能不能买？跨境购买 ETF 有税务与合规问题。这条是天然的「地方化改写」母题。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== 中国台湾地区面板 ===================== -->
+<section class="panel" id="p-tw">
+  <div class="panel-head">
+    <h2><span class="flag">🇨🇳</span>中国台湾地区</h2>
+    <div class="tagline">本板块取自 CryptoCity／ABMedia／Zombit（加密）与 fxnewsgroup 台湾相关条目（外汇） · 外汇侧当日本地新闻稀缺，已如实标注并补充制度性素材</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="lb">品类筛选：</span>
+    <button class="fbtn active" data-filter="all" data-scope="tw">全部</button>
+    <button class="fbtn" data-filter="fx" data-scope="tw">💱 外汇</button>
+    <button class="fbtn" data-filter="cr" data-scope="tw">🪙 虚拟货币</button>
+    <button class="fbtn exp-all" data-expand-all="tw">展开全部卡片</button>
+  </div>
+
+  <div class="grp-bar"><h3 class="fx">💱 外汇行情 ＋ 外汇交易商消息</h3><span class="cnt">2 条 + 制度素材</span></div>
+
+  <div class="note warn">
+    <h4>⚠️ 缺口如实说明</h4>
+    本轮抓取的 10 个中文 FX 源（鉅亨網、MoneyDJ、Yahoo奇摩股市、Investing.com 香港、FXStreet 繁中、FX168、匯通財經、匯金網、Kitco、金十數據）中，<b>当日（10/22）没有针对中国台湾地区本地外汇经纪商或新台币监管的专属新闻</b>。FXStreet 繁中与匯通財經当日产出的主要是美元/日元、欧元/美元、黄金与美联储内容。<br>
+    我不打算用境外货币对的新闻硬凑「台湾区块」。下列 2 条是<b>与台湾有关联的真实新闻 + 可长期引用的制度素材</b>，其余请以地区无关的方式使用。
+  </div>
+
+  <div class="grid">
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">T1</span><span class="c-badge">💱 平台动态</span><span class="c-date">10/21</span></div>
+      <div class="c-title">TradingView 上线<b>台湾期货交易所（TAIFEX）</b>期权行情</div>
+      <div class="tags"><span class="tag t-new">10/21</span><span class="tag t-hot">台湾强相关</span></div>
+      <div class="bd">交易者平台 TradingView 宣布新增来自台湾期货交易所的期权数据/品种。对台湾本地交易社群而言，这是<b>本地交易所产品在主流全球终端上的可见度提升</b>，间接说明 TAIFEX 的产品国际关注度在上升。</div>
+      <div class="src">📎 出处：<a href="https://fxnewsgroup.com/forex-news/platforms/tradingview-adds-options-from-taiwan-futures-exchange/" target="_blank" rel="noopener">FX News Group — TradingView adds options from Taiwan Futures Exchange（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：这是本周唯一一条明确带「Taiwan」的国际外汇平台新闻。切法可以是：<b>本地合法通道 vs 境外 CFD 拉客</b> —— 台湾期货商走得出去，境外保证金却不受认可。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">T2</span><span class="c-badge">💱 制度素材</span><span class="c-date">长期可引用</span></div>
+      <div class="c-title">制度性素材（非当日新闻，长期可引用）：台湾<b>从未核发给境外券商的「外汇保证金」牌照类别</b></div>
+      <div class="tags"><span class="tag t-reg">非当日新闻</span><span class="tag t-xtra">常青内容</span></div>
+      <div class="bd">这是台湾外汇零售市场最重要、但被中文内容长期忽略的一条制度事实：<b>台湾的核准期货商才能经营外汇保证金交易，且杠杆上限约 1:30</b>；金管会并未对境外券商核发此类别牌照。<br>⚠️ 核查建议：发布前建议再走一次金管会证期局核准期货商名册与相关函释确认最新表述，本条为制度脉络整理，不是某一天的新闻。</div>
+      <div class="src">📎 背景参考：<a href="https://www.fxstreet.hk/" target="_blank" rel="noopener">FXStreet 繁体中文版（当日汇率框架的繁中可用来源）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：建议在报告中给出 Exness／XM／IC Markets／Pepperstone 等<b>活跃在中文市场</b>的境外券商在 WikiFX 上的市场监管差异，入口：<a href="https://www.wikifx.com/en/search?keyword=Exness" target="_blank" rel="noopener">Exness</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=XM" target="_blank" rel="noopener">XM</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=IC+Markets" target="_blank" rel="noopener">IC Markets</a></div>
+        <div class="ang">💡 选题角度：这条能做成<b>常青支柱内容</b>。《为什么你在台湾看到的 XX 交易商，出事时找不到人赔》—— 因为它没被核准，出金争议不走台湾金融消费评议中心。这类内容也会自然导向「先看牌照再说」。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+
+  <div class="grp-bar"><h3 class="cr">🪙 虚拟货币行情 ＋ 虚拟货币交易商消息</h3><span class="cnt">7 条</span></div>
+  <div class="grid">
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">T3</span><span class="c-badge">🪙 本地交易所</span><span class="c-date">10/22</span></div>
+      <div class="c-title"><b>幣託 BitoPro 携手远东商银 Bankee</b>，推「美元直换 USDT」并导入信托机制</div>
+      <div class="tags"><span class="tag t-hot">10/22 · 独家本地</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">幣託（BitoPro）交易所与远东商银 Bankee 合作推出<b>美元加值直接兑换 USDT</b> 的服务，并导入<b>美元信托机制</b>与 24 小时服务。<br>这是本周台湾本地最值得写的一条 —— 关键不在「多了一个功能」，而在于<b>由银行端做信托</b>的路径：它把「法币↔稳定币」这一段放进受监管的银行体系，与散户常见的「找币商换 USDT」形成鲜明对比。</div>
+      <div class="src">📎 出处：<a href="https://www.cryptocity.tw/news/bito-bankee-usd-to-usdt-direct-conversion" target="_blank" rel="noopener">加密城市 CryptoCity — 幣託攜手遠銀Bankee！推出美元直換USDT，導入信託機制、24小時服務（2026-10-22）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiBit 核查：BitoPro／幣託 → <a href="https://www.wikibit.com/zh-cn/exchanges/bitopro" target="_blank" rel="noopener">https://www.wikibit.com/zh-cn/exchanges/bitopro</a></div>
+        <div class="ang">💡 选题角度：<b>教科书级的「安全方案 vs 危险方案」对比题。</b>一边是银行信托 + 24 小时；另一边是Line/TG 私人币商、先转钱后被诈。这条几乎可以原封不动做成警告类爆款，且因为有正面案例，不会显得像负面攻击。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">T4</span><span class="c-badge">🪙 代币化证券</span><span class="c-date">10/22</span></div>
+      <div class="c-title"><b>OKX 与 ICE 的代币化美股合作被 16 家巨头拒绝</b></div>
+      <div class="tags"><span class="tag t-hot">10/22</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">OKX 与洲际交易所（ICE）推动的代币化美股合作案，遭微软、Google、高盛等<b> 16 家巨型拒绝参与</b>。代币化证券是 2026 的热门叙事，但这条说明<b>资产端本身的态度远比发行端保守</b>。</div>
+      <div class="src">📎 出处：<a href="https://www.cryptocity.tw/news/okxice-tokenized-us-stocks-rejected-16-giants" target="_blank" rel="noopener">加密城市 — 微軟、Google、高盛也說不！OKX與ICE代幣化美股合作，被16家巨頭拒絕（2026-10-22）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiBit 核查：OKX → <a href="https://www.wikibit.com/zh-cn/exchanges/okx" target="_blank" rel="noopener">https://www.wikibit.com/zh-cn/exchanges/okx</a></div>
+        <div class="ang">💡 选题角度：非常适合「<b>泼冷水选题</b>」。《代币化美股：平台很热，苹果微软不买账》—— 用具体的拒绝名单打脸叙事，比空谈「代币化是趋势」有信息量得多。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">T5</span><span class="c-badge">🪙 监管处罚</span><span class="c-date">10/21</span></div>
+      <div class="c-title"><b>Gemini 想撤掉 $500万 CFTC 罚款和解，被法院驳回</b>，维持永久禁制令</div>
+      <div class="tags"><span class="tag t-reg">10/21</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">Gemini 试图撤销此前与美国商品期货交易委员会（CFTC）达成的 <b>500 万美元</b>罚款和解协议，遭到法院驳回，法官维持原判与<b>永久禁制令</b>。</div>
+      <div class="src">📎 出处：<a href="https://www.cryptocity.tw/news/gemini-cftc-5-million-settlement-judge-upholds" target="_blank" rel="noopener">加密城市 — Gemini交易所撤銷500萬鎂罰款和解被駁回！法院維持原判「永久禁制令」（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiBit 核查：Gemini → <a href="https://www.wikibit.com/zh-cn/exchanges/gemini" target="_blank" rel="noopener">https://www.wikibit.com/zh-cn/exchanges/gemini</a></div>
+        <div class="ang">💡 选题角度：<b>罚单一经签订想反悔，法院不答应</b>。说明和解协议一经签订就极难推翻，对于理解「监管处罚的可逆性」是很好的案例。可与前面的 FCA 吊销 Startrader 对照写「同一个监管动作，能不能被翻」。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">T6</span><span class="c-badge">🪙 市场进入</span><span class="c-date">10/21</span></div>
+      <div class="c-title">Canton 基金会进军台湾，锁定「全球第五大市场」代币化机会</div>
+      <div class="tags"><span class="tag t-new">10/21</span><span class="tag t-reg">特别企划</span></div>
+      <div class="bd">Canton Network 基金会宣布进入台湾市场，APAC 负责人披露三项布局，瞄准代币化（tokenization）在台湾的机会。</div>
+      <div class="src">📎 出处：<a href="https://www.cryptocity.tw/news/canton-foundation-enters-taiwan-targeting-tokenization" target="_blank" rel="noopener">加密城市 — Canton基金會進軍台灣！APAC負責人揭3佈局，瞄準全球第五大市場代幣化機會（2026-10-21，特別企劃）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：注意该条为<b>特别企划/广告性质</b>，引用时需要明确标注来源性质，不宜作为纯新闻处理。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">T7</span><span class="c-badge">🪙 DeFi 监管</span><span class="c-date">10/22</span></div>
+      <div class="c-title">英国 FCA 发布 <b>DeFi 指引咨询 GC26-7</b>：自称去中心化也要申请许可</div>
+      <div class="tags"><span class="tag t-reg">10/22</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">英国 FCA 就 DeFi 监管发布咨询文件 GC26-7，核心立场是：<b>即使自称去中心化，只要实质上从事受监管活动，仍须申请许可</b>。这与 FCA 近两年一贯的「same activity, same regulation」立场一致。</div>
+      <div class="src">📎 出处：<a href="https://abmedia.io/uk-fca-defi-guidance-consultation-gc26-7" target="_blank" rel="noopener">鏈新聞 ABMedia — 英國 FCA 發布 DeFi 指引諮詢：自稱去中心化也要申請許可（2026-10-22）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：这条是<b>「去中心化不是免罚金牌」</b>最好用的法规依据，可以直接放进任何关于 DeFi 平台的科普或评测文里作为警示段落。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">T8</span><span class="c-badge">🪙 稳定币 / ETF</span><span class="c-date">10/22</span></div>
+      <div class="c-title">美国货币监理署稳定币新规遭银行家协会呛声；灰度 10 档 ETF 开放实物申购</div>
+      <div class="tags"><span class="tag t-reg">10/22</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">美国银行家协会（ABA）批评 OCC 的稳定币新规「架空国会」，让加密平台照样可以发收益；同时，灰度宣布为 <b>10 档加密 ETF</b> 开放实物申购（直接用币换股，门槛 8 万美元起）。两条合起来看，是<b>传统银行与加密平台围绕「稳定币能不能生息」的正面冲突</b>。</div>
+      <div class="src">📎 出处：<a href="https://abmedia.io/aba-occ-stablecoin-yield-rule-criticism" target="_blank" rel="noopener">ABMedia — 美國銀行家協會批貨幣監理署穩定幣新規架空國會（2026-10-22）</a> ｜ <a href="https://abmedia.io/grayscale-in-kind-subscriptions-10-crypto-etfs" target="_blank" rel="noopener">ABMedia — 灰度 10 檔加密 ETF 開放實物申購（2026-10-22）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：<b>「谁在推动，谁在反对」比「监管出了什么」更好读。</b>ABA vs 加密平台这条对立结构，非常适合做观点型内容。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">T9</span><span class="c-badge">🪙 平台治理</span><span class="c-date">10/21</span></div>
+      <div class="c-title">YouTube 突袭封锁多个比特币频道并标注「有害内容」</div>
+      <div class="tags"><span class="tag t-new">10/21</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">YouTube 封锁了若干比特币相关频道，并贴上「有害与危险」标签，引发加密社群强烈反弹。</div>
+      <div class="src">📎 出处：<a href="https://www.cryptocity.tw/news/youtube-bans-bitcoin-channels-harmful-content-backlash" target="_blank" rel="noopener">加密城市 — YouTube突襲封鎖比特幣頻道！還貼上有害與危險標籤，引發加密社群怒火（2026-10-21）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：流量入口被封锁 → 投资者更容易转向 Telegram/Discord 私群 → 诈骗风险上升。这条是<b>「平台治理变化如何影响散户安全」</b>的好素材。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== 印度面板 ===================== -->
+<section class="panel" id="p-in">
+  <div class="panel-head">
+    <h2><span class="flag">🇮🇳</span>印度</h2>
+    <div class="tagline">本板块外汇侧为四地区中信息量最大者 · RBI Alert List 已达 95 家 · 10/10 双通函大幅收紧衍生品规则 · USD/INR 参考水平见附表</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="lb">品类筛选：</span>
+    <button class="fbtn active" data-filter="all" data-scope="in">全部</button>
+    <button class="fbtn" data-filter="fx" data-scope="in">💱 外汇</button>
+    <button class="fbtn" data-filter="cr" data-scope="in">🪙 虚拟货币</button>
+    <button class="fbtn exp-all" data-expand-all="in">展开全部卡片</button>
+  </div>
+
+  <div class="grp-bar"><h3 class="fx">💱 外汇行情 ＋ 外汇交易商消息</h3><span class="cnt">4 条</span></div>
+  <div class="grid">
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">I1</span><span class="c-badge">💱 监管名单</span><span class="c-date">10/01 核实</span></div>
+      <div class="c-title"><b>RBI Alert List 已达 95 家</b>，几乎所有主要国际零售外汇品牌在列</div>
+      <div class="tags"><span class="tag t-hot">10/1 核实</span><span class="tag t-reg">监管</span></div>
+      <div class="bd">印度储备银行（RBI）的公开警示名单（Alert List）在 <b>2026-10-01 核实时有 95 条记录</b>。清单明确定义这些实体「<b>既未依 FEMA 获准从事外汇业务，也未获准经营外汇电子交易平台（ETP）</b>」，并纳入为其推广的网站。<br>已列入的经纪商包括：<b>Exness、HotForex／HFM、Vantage Markets、JustMarkets、PU Prime、FBS、XM、IC Markets、Pepperstone、FP Markets、Tickmill、AvaTrade、Admiral Markets、Easy Markets、OctaFX、FXTM、IG Markets、eToro、Forex.com、ThinkMarkets、Fusion Markets</b>；自营/资助型还有 <b>FTMO、FundedNext</b>；甚至连 <b>metatrader4.com 与 metatrader5.com 网站本身</b>也在列。<br>⚠️ RBI 同时明说：<b>名单不是穷举的</b>。不在名单上 ≠ 已获授权。授权状态应比对 RBI 的 authorised persons 与 authorised ETPs 名单。</div>
+      <div class="src">📎 出处：<a href="https://hnlgrowth.com/blog/is-forex-trading-legal-in-india" target="_blank" rel="noopener">Is Forex Trading Legal in India? RBI, FEMA and the Alert List（2026-10-01 核实，列明 95 家清单）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查（这条价值最大）：<a href="https://www.wikifx.com/en/search?keyword=Exness" target="_blank" rel="noopener">Exness</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=XM" target="_blank" rel="noopener">XM</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=IC+Markets" target="_blank" rel="noopener">IC Markets</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=Pepperstone" target="_blank" rel="noopener">Pepperstone</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=JustMarkets" target="_blank" rel="noopener">JustMarkets</a> ｜ <a href="https://www.wikifx.com/en/search?keyword=Vantage" target="_blank" rel="noopener">Vantage</a></div>
+        <div class="ang">💡 选题角度：<b>这是本轮最有价值的单一素材。</b>95 家名单直接给出了选题素材 —— 一家一家写「这家在印度不是授权 ETP」，或者汇总成《在你存款前，先在这份名单上搜一下这家》。而且名单里连 MT4/MT5 官网都在，极具话题性。<br>另一个角度：这些品牌在多国持有真实牌照（塞舌尔、毛里求斯、塞浦路斯、南非），但<b>「境外牌照」无法解决印度居民在 FEMA 下的 ETP 授权问题</b> —— 这正是 WikiFX 最擅长讲的「看牌照在哪、更看在哪展业」。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">I2</span><span class="c-badge">💱 央行政策</span><span class="c-date">10/10</span></div>
+      <div class="c-title">RBI 收紧卢比外汇衍生品规则：免暴露门槛由 <b>$1亿骤降至 $500万</b></div>
+      <div class="tags"><span class="tag t-reg">10/10</span><span class="tag t-hot">重磅</span></div>
+      <div class="bd">RBI 于 10 月 10 日发布多项措施（A.P. (DIR Series) Circular No.25），即时生效：<br>① 未建立实质暴露即进行外汇衍生品对冲的门槛，由 <b>$100M 降至 $500万</b>，适用于所有授权商（AD）；交易所交易货币衍生品（含卢比）对应门槛同样由 $100M 降至 $500万。<br>② 禁止 AD 允许用户<b>重订（rebook）</b>已取消的卢比衍生品合约（到期展期 rollover 仍允许）。<br>③ AD 须取得客户<b>承诺函</b>，确认同一暴露未在另一家 AD 重复对冲；文件须保留至少两年。</div>
+      <div class="src">📎 出处：<a href="https://www.informistmedia.com/CommodityWire/61667/FX-Rules-RBI-tightens-forex-derivative-rules-cuts-exposure-threshold-to-5-million" target="_blank" rel="noopener">Informist Media — RBI tightens forex derivative rules, cuts exposure threshold to $5 million（2026-10-10，含 USD1 = INR 96.73 报价）</a> ｜ <a href="https://www.moneylife.in//article/rbi-tightens-forex-derivatives-rules-cuts-exposure-limit-to-us5mn-introduces-20-percentage-cash-reserve/81913.html" target="_blank" rel="noopener">Moneylife India — RBI Tightens Forex Derivatives Rules（2026-10-10，双通函细节）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：门槛从 $1亿砍到 $500万是<b>20 倍</b>级别的收紧。标题可以是《印度把免暴露对冲额度砍掉了 95%》。这条论证了「印度正在系统性地关闭外汇投机的正规通道」，反过来解释了为什么地下加密货币渠道会扩张 —— 两者是有因果关系的，能串成一篇深度。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">I3</span><span class="c-badge">💱 央行政策</span><span class="c-date">10/10</span></div>
+      <div class="c-title">RBI 引入<b>外汇风险准备金（FERR）</b>：超过 $200万合约须缴 20% 现金</div>
+      <div class="tags"><span class="tag t-reg">10/10</span></div>
+      <div class="bd">另一份通函（A.P. (DIR Series) Circular No.26）引入 FERR 要求：名义金额超过 <b>$200万</b>的卢比外汇衍生品合约（用于经常账户对冲且客户买入外币卖出卢比），AD 须按名义金额本币等值的 <b>20%</b> 以现金形式存于 RBI，<b>每日维持直至合约终止</b>，并通过 RBI 的 CIMS 系统日报。<br>通函还明确：<b>试图通过与一家或多家 AD 拆单来规避 $200万门槛，将被视为违规</b>。</div>
+      <div class="src">📎 出处：<a href="https://www.moneylife.in//article/rbi-tightens-forex-derivatives-rules-cuts-exposure-limit-to-us5mn-introduces-20-percentage-cash-reserve/81913.html" target="_blank" rel="noopener">Moneylife India — RBI Tightens Forex Derivatives Rules, Introduces 20% Cash Reserve（2026-10-10）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：20% 现金准备金 = 直接抬高套保成本。<b>《印度企业的外汇对冲，从此要多押两成现金》</b> —— 面向企业读者而非散户，这是竞争少、专业度高的选题。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">I4</span><span class="c-badge">💱 支付通道</span><span class="c-date">持续</span></div>
+      <div class="c-title">印度 UPI 渠道持續封鎖：多家名单内券商明确不服务印度</div>
+      <div class="tags"><span class="tag t-reg">持续</span></div>
+      <div class="bd">印度银行与支付机构已对名单内平台<b>阻断或回滚卡/UPI 付款</b>，理由是 RBI 的 LRS 规则不允许向境外对手方汇出保证金。多家券商自己也标明不服务印度 —— 例如 <b>JustMarkets 已将印度列入受限辖区</b>。<br>风险面拿下读数看：无印度追偿渠道（SEBI/RBI 申诉不覆盖境外平台）、入金可能被挡、出金被银行审查卡住、以及 Telegram/WhatsApp 群冒用名单品牌做「保证收益」的克隆骗局。</div>
+      <div class="src">📎 出处：<a href="https://hnlgrowth.com/blog/is-forex-trading-legal-in-india" target="_blank" rel="noopener">Is Forex Trading Legal in India? — 付款风险与克隆骗局小节（2026-10-01 核实）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：JustMarkets → <a href="https://www.wikifx.com/en/search?keyword=JustMarkets" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=JustMarkets</a></div>
+        <div class="ang">💡 选题角度：<b>最贴近普通受害者的一条。</b>「钱能进去出不来」永远是最有共鸣的题材，而且这条同时解释了「为什么有些平台明明标榜接受 UPI，付款却老是失败」。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+
+  <div class="grp-bar"><h3 class="cr">🪙 虚拟货币行情 ＋ 虚拟货币交易商消息</h3><span class="cnt">1 条 + 制度素材</span></div>
+
+  <div class="note warn">
+    <h4>⚠️ 缺口如实说明</h4>
+    本轮未在指定源抓到 10/22 当日印度交易所专属新闻，检索中<b>未发现 10/22 当日印度交易所专属新闻</b>。下列为可引用的长期制度素材。<b>不要把它写成当日新闻。</b>
+  </div>
+
+  <div class="grid">
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">I5</span><span class="c-badge">🪙 制度素材</span><span class="c-date">长期可引用</span></div>
+      <div class="c-title">印度 VDA 税制（制度性背景，发布必提）</div>
+      <div class="tags"><span class="tag t-reg">发布必提</span><span class="tag t-cr">加密</span></div>
+      <div class="bd">涉及印度地区的任何内容，合规红线是：<b>虚拟数字资产（VDA）利得按 30% 征税，每笔交易另扣 1% TDS，且亏损不得互抵</b>。<br>这是印度与其他三地最不一样的地方 —— 在税负结构上，印度把加密交易当作「非正常的、需要压制的活动」来处理。任何号称「在印度炒币免税」的说法都是错的。</div>
+      <div class="src">📎 背景参考：<a href="https://abmedia.io/aba-occ-stablecoin-yield-rule-criticism" target="_blank" rel="noopener">ABMedia — 美国稳定币收益争议（可作为对照：美国在争「能不能生息」，印度先收 30%）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：<b>横向对比极其尖锐</b> —— 美国在吵稳定币该不该付息，印度已经先收走 30% 且不许亏损抵扣。这个对照本身就是一篇好文章的骨架。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== 印度尼西亚面板 ===================== -->
+<section class="panel" id="p-id">
+  <div class="panel-head">
+    <h2><span class="flag">🇮🇩</span>印度尼西亚</h2>
+    <div class="tagline">三层监管务必分清：BAPPEBTI（外汇保证金／商品期货）· OJK（加密）· BI（货币政策）· 本轮重点为 WikiFX 可查的本地经纪商牌照撤销状态</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="lb">品类筛选：</span>
+    <button class="fbtn active" data-filter="all" data-scope="id">全部</button>
+    <button class="fbtn" data-filter="fx" data-scope="id">💱 外汇</button>
+    <button class="fbtn" data-filter="cr" data-scope="id">🪙 虚拟货币</button>
+    <button class="fbtn exp-all" data-expand-all="id">展开全部卡片</button>
+  </div>
+
+  <div class="grp-bar"><h3 class="fx">💱 外汇行情 ＋ 外汇交易商消息</h3><span class="cnt">4 条</span></div>
+  <div class="grid">
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">D1</span><span class="c-badge">💱 WikiFX 可查</span><span class="c-date">已核实</span></div>
+      <div class="c-title"><b>Fintech Maju Berjangka</b>：BAPPEBTI 牌照已撤销，WikiFX 评分低至 <span class="hl2">1.50 / 1.86</span></div>
+      <div class="tags"><span class="tag t-reg">已核实</span><span class="tag t-hot">负面样本</span></div>
+      <div class="bd">印尼本地外汇交易商 Fintech Maju Berjangka 成立于 2021 年，此前持有印尼商品期货交易监管机构 <b>BAPPEBTI</b> 的外汇交易牌照（EP，许可证号 0001/UPTP/SIP/6/2021），<b>现已撤销</b>。<br>WikiFX 数据显示其综合评分仅 <b>1.50 / 10</b>（另有页面显示 1.86），监管指数与牌照指数均为 <b>0.0</b>，被标注为「高潜在风险」「监管牌照存疑」。用户曝光（exposure）集中在<b>出金困难</b>与「账户托管承诺未兑现」。WikiFX 明确表述不建议入门者使用。</div>
+      <div class="src">📎 出处：<a href="http://ar.wikifx.com/en/dealer/3254125901.html" target="_blank" rel="noopener">WikiFX — Fintech Maju Berjangka 评测页（评分／牌照／曝光问答）</a> ｜ <a href="https://www.wikifx.xin/zh-cn/word/3254125901.html" target="_blank" rel="noopener">WikiFX（中文版）同一标的</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：直达 dealer ID <code>3254125901</code> —— 这是本报告中<b>真实可点开的 WikiFX 标的页</b>，可直接用作「如何在 WikiFX 上查一个可疑交易商」的操作演示。</div>
+        <div class="ang">💡 选题角度：<b>天然的「教科书级负面样本」。</b>优点是它「注册在印尼、有本地存在感」—— 正是最容易骗到人的那种。可以做《为什么「本地注册」不能变成「安全保证」》，并在文中给出一步步查牌照的方法。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">D2</span><span class="c-badge">💱 WikiFX 可查</span><span class="c-date">已核实</span></div>
+      <div class="c-title"><b>PT. Sentratama Investor Berjangka</b>：典型「一撤一留」的双重状态</div>
+      <div class="tags"><span class="tag t-reg">已核实</span><span class="tag t-hot">双牌照状态</span></div>
+      <div class="bd">印尼 2011 年成立的老牌经纪商，呈现极为微妙的监管结构：<br>• <b>BAPPEBTI</b>：零售外汇牌照 09/BAPPEBTI/SI/XII/2000 —— <span class="hl2">已撤销（Revoked）</span><br>• <b>JFX（雅加达期货交易所）</b>：零售外汇牌照 SPAB-036/BBJ/10/00 —— <span class="hl">仍有效（Regulated）</span><br>交易条件方面：EUR/USD 点差 3 pips（偏高），使用自有 SIB 平台，<b>不支持 MT4/MT5</b>；公司网站 sibfx.co.id。</div>
+      <div class="src">📎 出处：<a href="http://ar.wikifx.com/en/dealer/2481218390.html" target="_blank" rel="noopener">WikiFX — PT. Sentratama Investor Berjangka 评测页（双重牌照状态、平台与点差）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：直达 dealer ID <code>2481218390</code></div>
+        <div class="ang">💡 选题角度：<b>「同一个公司，两个牌照，一个吊了一个没吊」</b> —— 这类复合状态是 WikiFX 数据最有说服力的场域。标题方向：《牌照不是开关，是拼图：怎么看懂一家券商的多层监管状态》。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">D3</span><span class="c-badge">💱 牌照撤销</span><span class="c-date">09/10 复核</span></div>
+      <div class="c-title"><b>PT Pialang Jepang Berjangka（PJB）</b>：两牌照俱撤、官网已成 CMS 占位页</div>
+      <div class="tags"><span class="tag t-reg">9/10 复核</span><span class="tag t-xtra">第三方评测站</span></div>
+      <div class="bd">第三方安全评测记录显示（2026-09-10 更新）：PJB 曾经的印尼零售外汇许可与衍生品交易许可<b>均已撤销</b>，且无法找到任何替代授权。前往 pjbindo.com 已不再提供经纪商站点 —— 返回的是<b>未配置的 CMS 占位页</b>，无 PJB 品牌、无账户页、无法律文件、无注册表单。<br>其他记录：曾宣传杠杆最高 <b>1:200</b>，走 SMART-TRADER 平台（非 MT4/MT5），仅支持银行电汇入金，最低入金/点差/佣金均未公开。</div>
+      <div class="src">📎 出处：<a href="https://wikilix.com/en/brokers/pjb-indonesia" target="_blank" rel="noopener">Wikilix — PJB（PT Pialang Jepang Berjangka）Review 2026（2026-09-10 更新，含风险评分卡）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：PJB → <a href="https://www.wikifx.com/en/search?keyword=Pialang+Jepang+Berjangka" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Pialang+Jepang+Berjangka</a><br>⚠️ 引用提示：Wikilix 是第三方评测站，非印尼官方，建议与 BAPPEBTI 官方名册交叉验证后再发。</div>
+        <div class="ang">💡 选题角度：<b>「官网都拆了，还在收你的钱吗？」</b> —— 网站消失是极强的预警信号，可以做成《五个信号说明你的经纪商准备跑路了》的核心案例。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+    <article class="card cat-fx" data-cat="fx">
+      <div class="c-head"><span class="num">D4</span><span class="c-badge">💱 高风险标的</span><span class="c-date">已核实</span></div>
+      <div class="c-title"><b>PT Indosukses Futures</b>：自述双牌照，第三方普遍判定为高风险；最低入金 <b>IDR 1 亿</b></div>
+      <div class="tags"><span class="tag t-reg">已核实</span><span class="tag t-hot">出金投诉</span></div>
+      <div class="bd">PT Indosukses Futures 自述持有 BAPPEBTI（No. 69/BAPPEBTI/SI/XII/2000）与 JFX（SPAB-032/BBJ/10/00）两许可，注册地址为雅加达南区 Sona Topas Tower。产品为 Forex／Metals／Energies／Indices，走 MT4，最低入金据报道为 <b>IDR 100,000,000</b>（约合数万美元级别，对散户极高）。<br>但多个第三方评测源指出其<b>监管牌照疑似过期或已被撤销</b>，并归类为 scam / 高风险；同时存在<b>出金困难与客户投诉</b>记录。</div>
+      <div class="src">📎 出处：<a href="https://www.globegain.com/brokers/indosukses-futures" target="_blank" rel="noopener">GlobeGain — Indosukses Futures Review（含牌照号、入金门槛、WikiFX/BrokersView 交叉判定）</a></div>
+      <div class="extra">
+        <div class="chk">🔍 WikiFX 核查：Indosukses Futures → <a href="https://www.wikifx.com/en/search?keyword=Indosukses" target="_blank" rel="noopener">https://www.wikifx.com/en/search?keyword=Indosukses</a><br>⚠️ 引用提示：GlobeGain 为第三方评测站，结论需与 BAPPEBTI／JFX 官方名册交叉验证。</div>
+        <div class="ang">💡 选题角度：<b>「1 亿印尼盾起步」这个数字本身就是标题。</b>高门槛 + 争议牌照 + 出金投诉，三者叠加是典型的资金盘特征集。可以做《那些要求你一次性存入 1 亿 Rpi 的平台》。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+
+  <div class="grp-bar"><h3 class="cr">🪙 虚拟货币行情 ＋ 虚拟货币交易商消息</h3><span class="cnt">1 条</span></div>
+
+  <div class="note">
+    <h4>⚠️ 缺口如实说明</h4>
+    本轮<b>未抓取到 10/22 当日印尼本地加密交易所的专属新闻</b>。此处仅提醒一条跨地区可引用的监管新规，不做凑数。
+  </div>
+
+  <div class="grid">
+
+    <article class="card cat-cr" data-cat="cr">
+      <div class="c-head"><span class="num">D5</span><span class="c-badge">🪙 跨境可引用</span><span class="c-date">10/22</span></div>
+      <div class="c-title">跨境可引用：OKX 代币化美股案遭 16 家巨头拒绝 / FINMA 批准瑞士现货 BTC ETF</div>
+      <div class="tags"><span class="tag t-cr">加密</span><span class="tag t-reg">需按 OJK 口径</span></div>
+      <div class="bd">两条均来自中国台湾地区板块（T4、J9），但同样适用于印尼市场 —— 印尼投资者关心的「能不能买到合规的比特币现货 ETF」这件事，瑞士刚开了口子。印尼本地合规层面请以 <b>OJK</b> 口径为准（加密资产监管自 2025/1/10 起已从 BAPPEBTI 移交 OJK）。</div>
+      <div class="src">📎 出处：<a href="https://www.cryptocity.tw/news/okxice-tokenized-us-stocks-rejected-16-giants" target="_blank" rel="noopener">加密城市 — OKX 与 ICE 代币化美股被 16 家巨头拒绝（2026-10-22）</a></div>
+      <div class="extra">
+        <div class="ang">💡 选题角度：印尼读者真正的痛点是「跨境买 ETF 到底合不合法」，可以从这条引出本地合规讨论。</div>
+      </div>
+      <button class="toggle">展开全文 ▾</button>
+    </article>
+
+  </div>
+</section>
+
+</div><!-- /wrap 面板区 -->
+
+<!-- ===================== 通用参考区（不随地区切换隐藏） ===================== -->
+<div class="wrap" id="ref-sec">
+
+  <div class="sec-title">📊 速查表</div>
+  <div class="sec-sub">以下两表为跨地区通用参考资料，不随顶部地区切换而隐藏。</div>
+
+  <h4 class="sub-h">① 外汇 / 本币行情速查</h4>
+  <div class="tbl-wrap">
+  <table>
+  <thead><tr><th>地区</th><th>货币对</th><th>参考水平</th><th>关键驱动 / 下一节点</th><th>出处</th></tr></thead>
+  <tbody>
+  <tr><td>🇯🇵 日本</td><td>USD/JPY</td><td>亚市早盘于 <b>158.00 上方</b>，延续区间整理</td><td>10/28 FOMC → 10/29—30 BOJ 同周开会；交易员观望</td><td><a href="https://www.fxstreet.hk/news/ri-yuan-dui-mei-yuan-yan-xu-qu-jian-bo-dong-jiao-dian-reng-zai-xia-zhou-de-mei-lian-chu-he-ri-ben-yang-xing-hui-yi-shang-202610220153" target="_blank" rel="noopener">FXStreet 繁中 10/22</a></td></tr>
+  <tr><td>🇮🇳 印度</td><td>USD/INR</td><td>Informist 稿尾报<b> US$1 = INR 96.73</b>（10/10 时点）</td><td>RBI 双通函收紧衍生品 + FERR 20% 准备金</td><td><a href="https://www.informistmedia.com/CommodityWire/61667/FX-Rules-RBI-tightens-forex-derivative-rules-cuts-exposure-threshold-to-5-million" target="_blank" rel="noopener">Informist 10/10</a></td></tr>
+  <tr><td>🇨🇳 中國台灣地區</td><td>USD/TWD</td><td colspan="2">本轮未在指定源抓到当日可靠快照，<b>留白不发</b>，建议注明「截至X时请刷新」后自行取央行/台北外汇市场数据</td><td>—</td></tr>
+  <tr><td>🇮🇩 印尼</td><td>USD/IDR</td><td colspan="2">本轮未取当日快照，<b>留白不发</b>；宏观驱动以 BI 货币政策立场为准</td><td>—</td></tr>
+  <tr><td>🌐 跨境</td><td>EUR/USD</td><td>1.1200 上方小幅收涨</td><td>法国政治动荡 + 财政担忧；法债收益率触 24 年高位；周末法国信用评级</td><td><a href="https://www.fxstreet.hk/news/ou-yuan-zai-fa-guo-zheng-zhi-dong-dang-he-cai-zheng-dan-you-zhi-xia-reng-zai-11200shang-fang-lu-de-xiao-fu-shang-zhang-202610220119" target="_blank" rel="noopener">FXStreet 10/22</a> ｜ <a href="https://www.fx678.com/C/20261021/202610212038302287.html" target="_blank" rel="noopener">匯通 10/21</a></td></tr>
+  <tr><td>🌐 贵金属</td><td>XAU/USD</td><td>多空拉锯，4,000 美元关口反复受考验</td><td>Fed 鹰派预期压顶；市场普遍预期 10 月不变、12 月再加息</td><td><a href="https://www.fx678.com/C/20261022/202610220758312064.html" target="_blank" rel="noopener">匯通 10/22</a> ｜ <a href="https://www.fx678.com/C/20261021/202610211137122061.html" target="_blank" rel="noopener">匯通 10/21</a></td></tr>
+  <tr><td>🇨🇳 人民币</td><td>USD/CNY</td><td>中间价 <b>6.7195</b>（上调 3 点）；昨日离岸收 6.6738</td><td>—</td><td><a href="https://www.fx678.com/C/20261022/202610220915232366.html" target="_blank" rel="noopener">匯通財經 10/22 09:15</a></td></tr>
+  </tbody>
+  </table>
+  </div>
+
+  <h4 class="sub-h">② 可查交易商 / 经纪商核查入口速查</h4>
+  <div class="srcbox">
+    <b>WikiFX 搜索 URL 格式：</b><code>https://www.wikifx.com/en/search?keyword=&lt;品牌英文名&gt;</code><br>
+    <b>WikiFX 标的页格式：</b><code>https://www.wikifx.com/en/dealer/&lt;数字ID&gt;.html</code>（已知 ID：<code>3254125901</code> Fintech Maju Berjangka；<code>2481218390</code> PT. Sentratama Investor Berjangka）<br>
+    <b>WikiBit 交易所页格式：</b><code>https://www.wikibit.com/zh-cn/exchanges/&lt;英文名小写&gt;</code><br>
+    ⚠️ 两个库<b>不可混用</b>：WikiFX 查外汇经纪商，WikiBit 查加密交易所。
+  </div>
+  <div class="tbl-wrap">
+  <table>
+  <thead><tr><th>地区</th><th>品类</th><th>标的</th><th>关键状态</th><th>核查入口</th></tr></thead>
+  <tbody>
+  <tr><td>🇮🇳 印度</td><td>外汇</td><td>Exness / XM / IC Markets / Pepperstone / JustMarkets / Vantage / FBS / FTMO</td><td>RBI Alert List 95 家在列（10/1 核实）</td><td><a href="https://www.wikifx.com/en/search?keyword=Exness" target="_blank" rel="noopener">WikiFX 逐个搜索</a></td></tr>
+  <tr><td>🇮🇩 印尼</td><td>外汇</td><td>Fintech Maju Berjangka</td><td>BAPPEBTI 已撤销；评分 1.50；出金困难曝光</td><td><a href="http://ar.wikifx.com/en/dealer/3254125901.html" target="_blank" rel="noopener">dealer/3254125901</a></td></tr>
+  <tr><td>🇮🇩 印尼</td><td>外汇</td><td>PT. Sentratama Investor Berjangka</td><td>BAPPEBTI 撤销 + JFX 有效（双状态）</td><td><a href="http://ar.wikifx.com/en/dealer/2481218390.html" target="_blank" rel="noopener">dealer/2481218390</a></td></tr>
+  <tr><td>🇮🇩 印尼</td><td>外汇</td><td>PT Pialang Jepang Berjangka (PJB)</td><td>两牌照俱撤；官网已失效</td><td><a href="https://www.wikifx.com/en/search?keyword=Pialang+Jepang+Berjangka" target="_blank" rel="noopener">WikiFX 搜索</a></td></tr>
+  <tr><td>🇮🇩 印尼</td><td>外汇</td><td>PT Indosukses Futures</td><td>牌照争议；最低入金 IDR 1 亿；出金投诉</td><td><a href="https://www.wikifx.com/en/search?keyword=Indosukses" target="_blank" rel="noopener">WikiFX 搜索</a></td></tr>
+  <tr><td>🇯🇵 日本</td><td>外汇</td><td>FOREX.com（StoneX 系）</td><td>日本上线周末股指 CFD</td><td><a href="https://www.wikifx.com/en/search?keyword=Forex.com" target="_blank" rel="noopener">WikiFX 搜索</a></td></tr>
+  <tr><td>🇯🇵 日本</td><td>外汇</td><td>DMM.com証券</td><td>10/7 收窄五货币对基准点差（非固定）</td><td><a href="https://www.wikifx.com/en/search?keyword=DMM" target="_blank" rel="noopener">WikiFX 搜索</a></td></tr>
+  <tr><td>🇯🇵 / 🌐</td><td>外汇</td><td>Startrader Pro Limited</td><td><b>FCA 已于 10/19 吊销许可</b></td><td><a href="https://www.wikifx.com/en/search?keyword=Startrader" target="_blank" rel="noopener">WikiFX 搜索（务必核对离岸主体是否仍在运营）</a></td></tr>
+  <tr><td>🌐</td><td>外汇</td><td>Titanedge Securities</td><td>CySEC 罚款 €10 万（10/16）</td><td><a href="https://www.wikifx.com/en/search?keyword=Titanedge" target="_blank" rel="noopener">WikiFX 搜索</a></td></tr>
+  <tr><td>🌐</td><td>外汇</td><td>Plus500 / XS.com / Equiti / Interactive Brokers / Webull / Moomoo</td><td>产品扩张 / 并购 / 挖角</td><td><a href="https://www.wikifx.com/en/search?keyword=Plus500" target="_blank" rel="noopener">WikiFX 搜索</a></td></tr>
+  <tr><td>🇨🇳 中國台灣地區</td><td>加密</td><td>幣託 BitoPro</td><td>携手远银 Bankee 推美元直换 USDT（10/22）</td><td><a href="https://www.wikibit.com/zh-cn/exchanges/bitopro" target="_blank" rel="noopener">WikiBit</a></td></tr>
+  <tr><td>🇨🇳 中國台灣地區</td><td>加密</td><td>OKX</td><td>代币化美股合作遭 16 家巨头拒绝</td><td><a href="https://www.wikibit.com/zh-cn/exchanges/okx" target="_blank" rel="noopener">WikiBit</a></td></tr>
+  <tr><td>🇯🇵 / 🌐</td><td>加密</td><td>Bitget</td><td>收购 GMO 泰国 Cryptonomics（10/20）</td><td><a href="https://www.wikibit.com/zh-cn/exchanges/bitget" target="_blank" rel="noopener">WikiBit</a></td></tr>
+  <tr><td>🌐</td><td>加密</td><td>Gemini</td><td>$500 万 CFTC 和解撤销被驳，永久禁制令维持</td><td><a href="https://www.wikibit.com/zh-cn/exchanges/gemini" target="_blank" rel="noopener">WikiBit</a></td></tr>
+  <tr><td>🇯🇵</td><td>加密</td><td>SBI VC Trade</td><td>与 Shinhan Card 签 MoU（PoC 阶段，未上线）</td><td><a href="https://www.wikibit.com/zh-cn/exchanges/sbi-vc-trade" target="_blank" rel="noopener">WikiBit</a></td></tr>
+  <tr><td>🌐</td><td>加密</td><td>Binance / Crypto.com / Revolut</td><td>下架交易对 / prime broker 合作 / 直布罗陀牌照</td><td><a href="https://www.wikibit.com/zh-cn/exchanges/binance" target="_blank" rel="noopener">WikiBit</a></td></tr>
+  </tbody>
+  </table>
+  </div>
+
+  <div class="sec-title">✅ 发布前核查要点</div>
+  <div class="sec-sub">以下为四地区通用硬性红线，发布前必读。</div>
+
+  <div class="note warn">
+    <h4>硬红线</h4>
+    <ul>
+    <li><b>印尼三层监管必须按品类区分</b>：BAPPEBTI 管外汇保证金／商品期货，OJK 管加密资产，BI 管货币政策。<span class="hl2">加密一律写 OJK，不得沿用旧的「BAPPEBTI 管加密」说法</span>（职责已于 2025/1/10 移交）。</li>
+    <li><b>印度内容必提税负</b>：VDA 利得 30%、每笔 1% TDS、<b>亏损不得互抵</b>。漏写会被专业读者挑出。</li>
+    <li><b>日本 20% 分离课税尚未施行</b>：最快 2028 年，当前仍为累进最高约 55%。<span class="hl2">禁止写成「现在就能按 20% 申报」</span>。</li>
+    <li><b>日本零售外汇杠杆上限 1:25</b>：宣称 1:400 的可判违规。另注意「注册在日本」≠「受金融厅监管」，必须给金商编号并提示读者去 search.fsa.go.jp 复核。</li>
+    <li><b>涉及台湾一律使用「中国台湾地区」</b>；代币化之类的 VASP 资本门槛目前是<b>子法草案</b>阶段，别写成已定案。</li>
+    <li><b>SBI × Shinhan 稳定币仅为 MoU / PoC</b>：<span class="hl2">没有上线、没有日期</span>，禁止写成「已开通日元稳定币支付」。</li>
+    <li><b>第三方评测站需交叉验证</b>：Wikilix / GlobeGain / BrokerRank / BrokerMafia 属第三方，非监管官方。写「某某被认定诈骗」前，务必再比一次 BAPPEBTI / FCA / CySEC 官方名册。</li>
+    <li><b>特别企划稿要标注性质</b>：如 Canton 基金会进军台湾那条为 CryptoCity 特别企划，具广告性质，不能当纯新闻引用。</li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <h4>数据时效提醒</h4>
+    <ul>
+    <li>所有汇率均为抓取时点快照（多为亚市早盘 / 格林威治时），发布前请以「<b>截至 X 时，发稿前请刷新</b>」格式标注。</li>
+    <li>本报告时间窗口为 <b>近 7—30 天</b>（10/1—10/22），国际板块条目集中在 10/19—10/21。<span class="hl2">不要把两周前的旧闻写成「今日」</span>，每条我都标了日期，请照抄。</li>
+    <li>USD/TWD 与 USD/IDR 本轮<span class="hl2">留白未填</span> —— 因为没有在指定源抓到可靠快照，宁缺不造。</li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <h4>源站可用性记录（下次抓取可直接复用）</h4>
+    <b>抓成功的：</b>fxnewsgroup.com（含 /retail-forex、/regulatory、/cryptocurrency 分众板块，质量最高）、abmedia.io、cryptocity.tw、zombit.info、fxstreet.hk、fx678.com、jin10.com<br>
+    <b>抓取失败（WebFetch 被拒）需改用 WebSearch：</b>blocktempo.com、blockcast.it、blocktrend.today、fx168news.com<br>
+    <b>建议下次补 Sample：</b>moneydj.com、news.cnyes.com、tw.stock.yahoo.com/gold、gold678.com、kitco.com、hk.investing.com、chainee.io
+  </div>
+
+  <div class="foot">
+    本报告由自动化检索整理，服务于 WikiFX 内容策划。<br>
+    <b>方法论</b>：新闻事实取自行业媒体（fxnewsgroup / CryptoCity / ABMedia / Zombit / FXStreet 繁中 / 匯通財經 / Informist / Moneylife / 岐阜新聞），<b>交易商仅作为核查标的</b>，WikiFX / WikiBit 作为检索入口附于每条之后，不引用 WikiFX 自家文章作为新闻出处。<br>
+    <b>时间窗口</b>：2026-10-01 至 2026-10-22。行情数据为抓取时点快照，发稿前请刷新核对。<br>
+    本报告仅供参考，不构成投资建议。
+  </div>
+</div>
+
+<div class="bottom-bar">
+  四地区外汇与虚拟货币 · 行业新闻选题库 ｜ 2026-10-22 ｜ WikiFX 内容策划内部用
+</div>
+
+<script>
+(function(){
+  // ---------- 地区 Tab 切换 ----------
+  var tabs   = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
+
+  function switchTab(key){
+    tabs.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-tab') === key); });
+    panels.forEach(function(p){ p.classList.toggle('active', p.id === 'p-' + key); });
+    var shell = document.querySelector('.tabs-shell');
+    window.scrollTo({top: shell.offsetTop - 4, behavior:'smooth'});
+  }
+  tabs.forEach(function(b){
+    b.addEventListener('click', function(){ switchTab(b.getAttribute('data-tab')); });
+  });
+
+  // ---------- 分组可见性（筛选后隐藏空分组） ----------
+  function refreshGroups(panel){
+    var bars = Array.prototype.slice.call(panel.querySelectorAll('.grp-bar'));
+    bars.forEach(function(bar){
+      var grid = bar.nextElementSibling;
+      while(grid && grid.className.indexOf('grid') === -1){ grid = grid.nextElementSibling; }
+      if(!grid) return;
+      var visible = grid.querySelectorAll('.card:not(.hide)').length;
+      bar.style.display = visible ? '' : 'none';
+    });
+  }
+
+  // ---------- 品类筛选 ----------
+  function applyFilter(scope, key){
+    var panel = document.getElementById('p-' + scope);
+    if(!panel) return;
+    var cards = Array.prototype.slice.call(panel.querySelectorAll('.card'));
+    cards.forEach(function(c){
+      if(key === 'all' || c.getAttribute('data-cat') === key){ c.classList.remove('hide'); }
+      else { c.classList.add('hide'); }
+    });
+    refreshGroups(panel);
+  }
+  var fbtns = Array.prototype.slice.call(document.querySelectorAll('.fbtn[data-filter]'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click', function(){
+      var scope = b.getAttribute('data-scope');
+      Array.prototype.slice.call(document.querySelectorAll('.fbtn[data-filter][data-scope="'+scope+'"]')).forEach(function(x){
+        x.classList.toggle('active', x === b);
+      });
+      applyFilter(scope, b.getAttribute('data-filter'));
+    });
+  });
+
+  // ---------- 卡片展开 / 收起 ----------
+  function setCard(card, open){
+    card.classList.toggle('open', open);
+    var t = card.querySelector('.toggle');
+    if(t){ t.textContent = open ? '收起内容 ▴' : '展开全文 ▾'; }
+  }
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  cards.forEach(function(card){
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e){
+      if(e.target.closest('a')) return;           // 点击链接正常跳转，不触发展开
+      var tg = card.querySelector('.toggle');
+      if(e.target === tg || e.target === tg.firstChild){
+        setCard(card, !card.classList.contains('open'));
+        return;
+      }
+      if(!card.classList.contains('open')) setCard(card, true);   // 折叠时点卡片任意处展开
+    });
+  });
+
+  // ---------- 全部展开 / 收起 ----------
+  Array.prototype.slice.call(document.querySelectorAll('[data-expand-all]')).forEach(function(b){
+    b.addEventListener('click', function(e){
+      e.stopPropagation();
+      var scope  = b.getAttribute('data-expand-all');
+      var list   = Array.prototype.slice.call(document.querySelectorAll('#p-' + scope + ' .card'));
+      var expand = b.getAttribute('data-state') !== 'on';
+      list.forEach(function(c){ setCard(c, expand); });
+      b.setAttribute('data-state', expand ? 'on' : 'off');
+      b.textContent = expand ? '收起全部卡片' : '展开全部卡片';
+    });
+  });
+
+  panels.forEach(refreshGroups);
+})();
+</script>
+
+</body>
+</html>
